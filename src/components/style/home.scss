@@ -1,0 +1,49 @@
+
+.home_container{
+    min-height:100vh;
+    display:flex;
+    background: #020024;
+    background: linear-gradient(80deg,rgba(2, 0, 36, 1) 10%, rgba(9, 9, 121, 1) 63%, rgba(0, 212, 255, 1) 98%);
+
+    color:white;
+}
+.plans_div{
+    border:3px soild white;
+    width:50%;
+}
+.poster_div{
+    border:3px soild white;
+    width:50%;
+    display:flex;
+    align-content:space-around;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+h3{
+    margin-left:6rem;
+}
+.plans{
+    height:5rem;
+    width:30rem;
+    margin-left:6rem;
+    background-color:white;
+    margin:3rem;
+    color:black;
+    text-align:center;
+    border-radius:10px;
+
+}
+.plans h4{
+    padding-top:1.2rem;
+}
+.poster_container{
+    width:250px;
+    height:250px;
+    border:2px soild white;
+    margin-right:5rem;
+}
+.poster_container  img{
+    width:250px;
+    height:250px;
+}

@@ -1,0 +1,28 @@
+.movie-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-top:5rem;
+    gap:20px;
+    
+  }
+  .movie{
+  
+    border:1px solid black;
+    
+    height:35rem;
+    width:22%;
+    padding:1rem;
+  }  
+  .movie img{
+    height:20rem;
+    width:15rem;
+    
+  
+  }
+  li{
+  color: black !important;
+   text-decoration:none;
+  }

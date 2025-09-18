@@ -1,0 +1,112 @@
+*{
+  margin:0;
+  padding:0;
+}
+.navbar{
+  height:6rem;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 0 1%;
+  background:  rgba(9, 9, 121, 1) 0%,;
+}
+.logo{
+  height:70px;
+  width:100px;
+  cursor:pointer;
+  transition: transform 3s ease;
+}
+.logo:hover{
+  transition: transform 0.5s ease;
+}
+.ul_div{
+  display: flex;
+  flex-direction:row;
+  padding:0px;
+  list-style:none;
+  text-align:center;
+}
+.li_div{
+  display:inline-block;
+  font-size:22px;
+  margin:15px;
+  cursor:pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  color:#00d4ff;
+  border-radius: 5px;
+  height:2.5rem;
+  width:5rem;
+}
+
+
+.li_div:hover{
+color: #0A0AA3;
+background-color:#D1E4ED;
+transition: transform 0.3 ease;
+
+}
+a.active .li_div{
+color: black;
+font-weight: bold;
+border-bottom:2px solid #00d4ff;
+padding-bottom:3px;
+background-color:#D1E4ED;
+}
+i{
+color:#bbb;
+font-size:18px;
+transition: color 0.3s ease,transform 0.3s ease-in;
+}
+i:hover{
+color:#00d4ff;
+}
+
+button {
+  border-radius:50%;
+  margin:0 10px;
+  cursor:pointer;
+  background: transparent;
+  border:none;
+  transition:  transform 0.3s ease;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #242424;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.search-box:has(input:hover) {
+  /* Styles to apply to the parent div when the input is hovered */
+
+  border:5px soild #00d4ff;
+  box-shadow: 0 0 10px #00d4ff80;
+}
+
+.search-box input{
+  background-color: transparent;
+  border:none;
+  padding:5px;
+  font-size: 14px;
+  color:#fff;
+  outline:none;
+}
+
+.mode{
+  color:#00d4ff;
+  height:30px;
+  width:30px;
+  transition: transform 0.3s ease;
+}
+button:hover .mode{
+  color:#00d4ff;
+  transform: rotate(20deg) scale(1.1);
+}
+logoutBtn{
+    color:"white";
+    background-color: #00d4ff;
+}
+

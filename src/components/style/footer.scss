@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding:0;
+}
+.footer_container {
+  height: 30rem;
+  width: 100%;
+
+  background-color: black;
+  color: white;
+}
+table {
+  height: 10rem;
+  width: 70rem;
+  position: relative;
+  top: 1rem;
+  left: 25%;
+}
+tr {
+  height: 1rem;
+}
+td {
+  padding: 0.5rem 1 rem;
+  text-align: left;
+}
+.email_div {
+  margin: 1rem 25%;
+}
+p {
+  padding-top: 1rem;
+  text-align: center;
+}
+.footer_email_input {
+  height: 3rem;
+  width: 40rem;
+  background-color: #1d1d1d;
+
+  color: white;
+}
+
+.footer_email_input:focus {
+  border: 1px soild white;
+}
+
+.email_btn {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 0%;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.copyrights {
+  text-align: center;
+  margin-top: 3rem;
+  color: grey;
+}
+
