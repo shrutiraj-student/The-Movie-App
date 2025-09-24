@@ -1,13 +1,14 @@
 import React from "react";
-import "./style/header.scss";
+import "../style/header.scss";
 import { useState } from "react";
 import { NavLink,useLocation } from "react-router";
 import Login from "./Login.jsx";
-import Logout from "./Logout.jsx";
 
 const Navbar = (props) => {
   const [searchQuery, setsearchQuery] = useState("");
   const location = useLocation();
+  const user = JSON.parse(localStorage.getItem("userInfo"));
+  //console.log(location.pathname);
 
   function handleChange(event) {
     //console.log(event.target.value);
@@ -17,10 +18,11 @@ const Navbar = (props) => {
   async function handleSubmit(event) {
     event.preventDefault();
     console.log("hello");
-    if (searchQuery.trim() === "") return;
+    if (searchQuery.trim() === '') return; //(searchQuery.trim()return) it will return in every case we want to return when no movie name is written
     props.searchMovie(searchQuery);
   }
-  const showSearchBar = location.pathname === "/movies" || location.pathname === "/tv" || location.pathname === "/";
+  const showSearchBar = user && location.pathname !== "/about" ;
+  
 
 
   return (
@@ -42,7 +44,7 @@ const Navbar = (props) => {
           </NavLink>
         </div>
       </nav>
-      {props.user && showSearchBar && (
+      {showSearchBar && (
       <div className="search-box">
         <form onSubmit={handleSubmit}>
           <input

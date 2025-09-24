@@ -10,6 +10,7 @@
 .plans_div{
     border:3px soild white;
     width:50%;
+    
 }
 .poster_div{
     border:3px soild white;
@@ -28,7 +29,7 @@ h3{
     width:30rem;
     margin-left:6rem;
     background-color:white;
-    margin:3rem;
+    margin:3rem 6rem;
     color:black;
     text-align:center;
     border-radius:10px;
@@ -47,3 +48,10 @@ h3{
     width:250px;
     height:250px;
 }
+.no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #888;
+  }
+  

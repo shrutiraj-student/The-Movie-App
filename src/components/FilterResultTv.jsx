@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style/filterResult.scss';
+import '../style/filterResult.scss';
 
 
 const FilterResult = (props) => {

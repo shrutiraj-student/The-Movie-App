@@ -2,8 +2,8 @@ import React, { createContext,useState,useEffect } from 'react'
 import Tv from './Tv';
 
 
-const BookMarkContent = createContext();
-const BookMarkProvider = () => {
+const BookMarkProvider = createContext();
+const BookMarkContent = () => {
     //const [bookMarkItem,setBookMarkItem] = useState(JSON.parse(localStorage.getItem("bookMarkKey")) || []); -> make it in key value pair
     const [bookMarkItem,setBookMarkItem] = useState(()=>{
       const rawData = localStorage.getItem('bookMarkKey');  //_> for the first time there will be no data then return empty array as we are using array 
@@ -19,14 +19,14 @@ const BookMarkProvider = () => {
 
   return (
     <div>
-      <BookMarkContent.Provider value={{setBookMarkItem,bookMarkItem}}> 
+      <BookMarkProvider.Provider value={{setBookMarkItem,bookMarkItem}}> 
           <Home/>
           <Movies/>
           <Tv/>
-      </BookMarkContent.Provider>
+      </BookMarkProvider.Provider>
     </div>
   )
 }
 
-export {BookMarkContent}
-export default BookMarkProvider
+export {BookMarkProvider}
+export default BookMarkContent

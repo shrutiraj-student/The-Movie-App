@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import "./style/home.scss";
-import "./style/card.scss";
+import "../style/home.scss";
+import "../style/card.scss";
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import ButtonExample from "./ButtonExample";
+const api_key = import.meta.env.VITE_API_KEY;
 
 const Home = (props) => {
   
@@ -35,8 +36,8 @@ const Home = (props) => {
     });
   }
   //reactQuery
-  //const api_key = 'cd4c29267e33260cf6d88b148d457502';
-  const api_key = import.meta.env.VITE_API_KEY;
+  
+  
   // const { isLoading, data , error} = useQuery({
   //   queryKey: ["searchMovie"],
   //   queryFn: () => {

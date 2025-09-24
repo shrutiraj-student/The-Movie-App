@@ -3,7 +3,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import { googleLogout } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router";
-import "./style/login.scss";
+import "../style/login.scss";
 
 
 const Login = () => {

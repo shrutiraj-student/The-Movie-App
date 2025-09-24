@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style/filterResult.scss';
+import '../style/filterResult.scss';
 //http GET 'https://api.themoviedb.org/3/discover/movie?&sort_by=${sort_by}' \
 
 const FilterResult = (props) => {

@@ -3,8 +3,7 @@ import { gapi } from "gapi-script";
 import Home from './components/Home'
 import { useEffect } from 'react';
 
-const clientId =
-  "782354341679-1321qghtu0cjf3pb8iopor7g1bkkctcu.apps.googleusercontent.com";
+
 const App = () => {
   const initializeGapi = () => {
     gapi.client.init({
