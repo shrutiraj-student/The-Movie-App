@@ -97,7 +97,11 @@ const Movies = () => {
           </p>
         ) : (
           movies.map((movie) => {
-            if (!movie || !movie.title || !movie.poster_path || !movie.vote_average) return null;
+            if (!movie || !movie.title || !movie.poster_path || !movie.vote_average) {
+              <p className="no-results">
+              No movies found . Try another option.
+            </p>
+            };
 
             const isBookMark = bookMarkItem.includes(movie.id);
             return (

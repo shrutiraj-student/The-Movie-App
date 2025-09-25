@@ -24,8 +24,8 @@ const FilterResult = (props) => {
           <option value="name.asc">Ascending Title</option>
           <option value="name.desc">Decending Title</option>
           <option value="first_air_date.asc">Far Released</option>
-          <option value="popularity.desc">Recent Release</option>
-          <option value="vote_average.asc">Less Average Vote</option>
+          //<option value="first_air_date.desc">Recent Release</option>
+          //<option value="vote_average.asc">Less Average Vote</option> //some feilds are missing
           <option value="vote_average.desc">More Average Vote</option>
           <option></option>
         </select>

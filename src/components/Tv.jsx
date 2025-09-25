@@ -51,7 +51,7 @@ const Tv = () => {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      console.log("data tv ", data);
+      console.log("data tv i am sorting ", data);
       setTvShow(Array.isArray(data.results) ? data.results : []);
       return data;
     } catch (error) {
@@ -79,10 +79,10 @@ const Tv = () => {
     );
     const data = await res.json();
     console.log(data.results);
-    setTvShow(data.results);
+    setTvShow(Array.isArray(data.results) ? data.results : []);
     setIsLoadingstate(false);
   }
-  console.log("State TVShows", tvShows);
+  //console.log("State TVShows", tvShows);
   return (
     <div>
       <Navbar searchMovie={searchMovie} user={user}/>
